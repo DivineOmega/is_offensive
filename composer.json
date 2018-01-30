@@ -1,0 +1,27 @@
+{
+    "name": "divineomega/is_offensive",
+    "description": "This PHP package provides an `is_offensive` helper function. Passing a string to `is_offensive` will return a boolean telling you if it contains offensive words.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jordan Hall",
+            "email": "jordan@hall05.co.uk"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^5.7",
+        "fzaninotto/faker": "^1.6",
+        "satooshi/php-coveralls": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DivineOmega\\IsOffensive\\": "src/"
+        },
+        "files": [
+            "src/is_offensive_function.php"
+        ]
+    },
+    "license": "LGPL-3.0-only",
+    "require": {
+    }
+}
