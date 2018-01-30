@@ -21,4 +21,13 @@ class IsOffensiveTest extends TestCase
             $this->assertFalse(is_offensive($word));
         }
     }
+
+    public function testWhitelistedWords()
+    {
+        $words = ['hello'];
+
+        foreach($words as $word) {
+            $this->assertFalse(is_offensive($word));
+        }
+    }
 }

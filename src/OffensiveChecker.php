@@ -11,6 +11,8 @@ class OffensiveChecker
     {
         $censor = new CensorWords;
         $censor->setDictionary(['en-uk', 'en-us']);
+        $censor->addWhiteList(['hello']);
+
         $results = $censor->censorString($text);
 
         if (count($results['matched']) > 0) {
