@@ -3,6 +3,7 @@
 namespace DivineOmega\IsOffensive;
 
 use Snipe\BanBuilder\CensorWords;
+use function GuzzleHttp\json_decode;
 
 
 class OffensiveChecker
@@ -12,18 +13,18 @@ class OffensiveChecker
     public function __construct()
     {
         $this->censor = new CensorWords;
-        $this->setupBlackList();
+        $this->setupBadWords();
         $this->setupWhiteList();
     }
 
-    private function setupBlackList()
+    private function setupBadWords()
     {
-        $this->censor->setDictionary(['en-uk', 'en-us']);
+        $this->censor->setDictionary(['en-uk', 'en-us', __DIR__.'/BadWordsLoader.php']);
     }
 
     private function setupWhiteList()
     {
-        $this->censor->addWhiteList(['hello']);
+        $this->censor->addWhiteList(json_decode(file_get_contents(__DIR__.'/../resources/WhiteList.json')));
     }
 
     public function isOffensive($text)
