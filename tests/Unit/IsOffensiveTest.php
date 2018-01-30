@@ -6,7 +6,7 @@ class IsOffensiveTest extends TestCase
 {
     public function testIfOffensive()
     {
-        $words = ['fuck', 'fuk', 'fuker', 'motherfucker', 'mutherfuker', 'cunt'];
+        $words = ['fuck', 'fuk', 'fuker', 'motherfucker', 'mutherfuker', 'cunt', 'tit'];
 
         foreach($words as $word) {
             $this->assertTrue(is_offensive($word));
@@ -24,7 +24,7 @@ class IsOffensiveTest extends TestCase
 
     public function testWhitelistedWords()
     {
-        $words = ['hello', 'middlesex'];
+        $words = ['hello', 'Hello', 'HELLO', 'middlesex', 'tittesworth', 'scunthorpe'];
 
         foreach($words as $word) {
             $this->assertFalse(is_offensive($word));
