@@ -23,18 +23,18 @@ To check if a word is offensive, just pass it to the `is_offensive` method.
 Here are a few examples:
 
 ```php
-isOffensive('fuck');  // true
-isOffensive('fuk');   // true
+is_offensive('fuck');  // true
+is_offensive('fuk');   // true
 
-isOffensive('duck');  // false
-isOffsenive('cat');   // false
+is_offensive('duck');  // false
+is_offensive('cat');   // false
 
-isOffensive('sex');         // true
-isOffensive('Middlesex');   // false
+is_offensive('sex');         // true
+is_offensive('Middlesex');   // false
 
-isOffensive('tit');         // true
-isOffensive('Tittesworth'); // false
+is_offensive('tit');         // true
+is_offensive('Tittesworth'); // false
 
-isOffensive('cunt');        // true
-isOffensive('Scunthorpe');  // false
+is_offensive('cunt');        // true
+is_offensive('Scunthorpe');  // false
 ```
