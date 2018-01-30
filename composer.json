@@ -18,7 +18,7 @@
             "DivineOmega\\IsOffensive\\": "src/"
         },
         "files": [
-            "src/is_offensive_function.php"
+            "src/IsOffensiveFunction.php"
         ]
     },
     "license": "LGPL-3.0-only",
