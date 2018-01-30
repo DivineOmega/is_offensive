@@ -32,8 +32,8 @@ isOffsenive('cat');   // false
 isOffensive('sex');         // true
 isOffensive('Middlesex');   // false
 
-isOffensive('tit');        // true
-isOffensive('Tittesworth');  // false
+isOffensive('tit');         // true
+isOffensive('Tittesworth'); // false
 
 isOffensive('cunt');        // true
 isOffensive('Scunthorpe');  // false
