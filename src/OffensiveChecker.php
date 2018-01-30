@@ -24,7 +24,14 @@ class OffensiveChecker
 
     private function setupWhiteList()
     {
-        $this->censor->addWhiteList(json_decode(file_get_contents(__DIR__.'/../resources/WhiteList.json')));
+        $words = json_decode(file_get_contents(__DIR__.'/../resources/WhiteList.json'));
+
+        foreach($words as $word) {
+            $words[] = strtoupper($word);
+            $words[] = ucwords($word);
+        }
+
+        $this->censor->addWhiteList($words);
     }
 
     public function isOffensive($text)
