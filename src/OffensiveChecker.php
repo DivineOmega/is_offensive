@@ -7,18 +7,29 @@ use Snipe\BanBuilder\CensorWords;
 
 class OffensiveChecker
 {   
+    private $censor;
+
+    public function __construct()
+    {
+        $this->censor = new CensorWords;
+        $this->setupBlackList();
+        $this->setupWhiteList();
+    }
+
+    private function setupBlackList()
+    {
+        $this->censor->setDictionary(['en-uk', 'en-us']);
+    }
+
+    private function setupWhiteList()
+    {
+        $this->censor->addWhiteList(['hello']);
+    }
+
     public function isOffensive($text)
     {
-        $censor = new CensorWords;
-        $censor->setDictionary(['en-uk', 'en-us']);
-        $censor->addWhiteList(['hello']);
+        $results = $this->censor->censorString($text);
 
-        $results = $censor->censorString($text);
-
-        if (count($results['matched']) > 0) {
-            return true;
-        }
-
-        return false;
+        return (count($results['matched']) > 0);
     }
 }
