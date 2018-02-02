@@ -5,14 +5,13 @@ namespace DivineOmega\IsOffensive;
 use Snipe\BanBuilder\CensorWords;
 use function GuzzleHttp\json_decode;
 
-
 class OffensiveChecker
-{   
+{
     private $censor;
 
     public function __construct()
     {
-        $this->censor = new CensorWords;
+        $this->censor = new CensorWords();
         $this->setupBadWords();
         $this->setupWhiteList();
     }
@@ -26,7 +25,7 @@ class OffensiveChecker
     {
         $words = json_decode(file_get_contents(__DIR__.'/../resources/WhiteList.json'));
 
-        foreach($words as $word) {
+        foreach ($words as $word) {
             $words[] = strtoupper($word);
             $words[] = ucwords($word);
         }
@@ -38,6 +37,6 @@ class OffensiveChecker
     {
         $results = $this->censor->censorString($text);
 
-        return (count($results['matched']) > 0);
+        return count($results['matched']) > 0;
     }
 }

@@ -8,7 +8,7 @@ class IsOffensiveTest extends TestCase
     {
         $words = ['fuck', 'fuk', 'fuker', 'motherfucker', 'mutherfuker', 'cunt', 'tit'];
 
-        foreach($words as $word) {
+        foreach ($words as $word) {
             $this->assertTrue(is_offensive($word));
         }
     }
@@ -17,7 +17,7 @@ class IsOffensiveTest extends TestCase
     {
         $words = ['duck', 'cat', 'greetings', 'cheese'];
 
-        foreach($words as $word) {
+        foreach ($words as $word) {
             $this->assertFalse(is_offensive($word));
         }
     }
@@ -26,7 +26,7 @@ class IsOffensiveTest extends TestCase
     {
         $words = ['hello', 'Hello', 'HELLO', 'middlesex', 'tittesworth', 'scunthorpe'];
 
-        foreach($words as $word) {
+        foreach ($words as $word) {
             $this->assertFalse(is_offensive($word));
         }
     }
