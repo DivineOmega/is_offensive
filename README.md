@@ -9,7 +9,7 @@ This PHP package provides an `is_offensive` helper function. Passing a string to
 
 ## Installation
 
-The `is_offensive` pacakge can be easily installed using Composer. Just run the following command from the root of your project.
+The `is_offensive` package can be easily installed using Composer. Just run the following command from the root of your project.
 
 ```
 composer require "divineomega/is_offensive"
