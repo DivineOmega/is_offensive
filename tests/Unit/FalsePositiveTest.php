@@ -13,5 +13,4 @@ class FalsePositiveTest extends TestCase
             $this->assertFalse(is_offensive($content));
         }
     }
-
 }
