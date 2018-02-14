@@ -18,7 +18,7 @@ class OffensiveChecker
 
     private function setupBadWords()
     {
-        $this->censor->setDictionary(['en-uk', 'en-us', __DIR__.'/BadWordsLoader.php']);
+        $this->censor->setDictionary([__DIR__.'/BadWordsLoader.php']);
     }
 
     private function setupWhiteList()
