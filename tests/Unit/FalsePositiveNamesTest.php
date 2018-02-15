@@ -12,7 +12,7 @@ class FalsePositiveNamesTest extends TestCase
         $faker = Faker\Factory::create('en_US');
         $faker->seed(self::FAKER_SEED);
 
-        for ($i=0; $i < self::NUMBER_OF_NAMES_TO_TEST; $i++) { 
+        for ($i = 0; $i < self::NUMBER_OF_NAMES_TO_TEST; $i++) {
             $name = $faker->name;
             $this->assertFalse(is_offensive($name));
         }
@@ -23,10 +23,9 @@ class FalsePositiveNamesTest extends TestCase
         $faker = Faker\Factory::create('en_GB');
         $faker->seed(self::FAKER_SEED);
 
-        for ($i=0; $i < self::NUMBER_OF_NAMES_TO_TEST; $i++) { 
+        for ($i = 0; $i < self::NUMBER_OF_NAMES_TO_TEST; $i++) {
             $name = $faker->name;
             $this->assertFalse(is_offensive($name));
         }
     }
-
 }
