@@ -2,9 +2,9 @@
 
 use PHPUnit\Framework\TestCase;
 
-class FalsePositiveTest extends TestCase
+class FalsePositiveTextsTest extends TestCase
 {
-    public function testForFalsePositives()
+    public function testForFalsePositivesInTexts()
     {
         $files = glob(__DIR__.'/texts/*.txt');
 
