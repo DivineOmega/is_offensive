@@ -3,7 +3,6 @@
 namespace DivineOmega\IsOffensive;
 
 use Snipe\BanBuilder\CensorWords;
-use function GuzzleHttp\json_decode;
 
 class OffensiveChecker
 {
