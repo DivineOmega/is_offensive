@@ -22,6 +22,6 @@
     },
     "license": "LGPL-3.0-only",
     "require": {
-        "snipe/banbuilder": "^2.2"
+        "snipe/banbuilder": "^2.2.5"
     }
 }
