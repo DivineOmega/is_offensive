@@ -8,21 +8,31 @@ class OffensiveChecker
 {
     private $censor;
 
-    public function __construct()
+    public function __construct(array $blacklist = [], array $whitelist = [])
     {
         $this->censor = new CensorWords();
-        $this->setupBadWords();
-        $this->setupWhiteList();
+
+        $this->setupBadWords($blacklist);
+        $this->setupWhiteList($whitelist);
     }
 
-    private function setupBadWords()
+    private function setupBadWords(array $blacklist)
     {
-        $this->censor->setDictionary([__DIR__.'/BadWordsLoader.php']);
+        if ($blacklist) {
+            file_put_contents('/tmp/CustomBadWords.json', json_encode($blacklist));
+            $this->censor->setDictionary([__DIR__.'/CustomBadWordsLoader.php']);
+        } else {
+            $this->censor->setDictionary([__DIR__.'/BadWordsLoader.php']);
+        }
     }
 
-    private function setupWhiteList()
+    private function setupWhiteList(array $whitelist)
     {
-        $words = json_decode(file_get_contents(__DIR__.'/../resources/WhiteList.json'));
+        if ($whitelist) {
+            $words = $whitelist;
+        } else {
+            $words = json_decode(file_get_contents(__DIR__.'/../resources/WhiteList.json'));
+        }
 
         foreach ($words as $word) {
             $words[] = strtoupper($word);
