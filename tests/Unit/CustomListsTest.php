@@ -35,5 +35,4 @@ class CustomListsTest extends TestCase
         $this->assertFalse($offensiveChecker->isOffensive('chicken'));
         $this->assertFalse($offensiveChecker->isOffensive('chickens'));
     }
-
 }
