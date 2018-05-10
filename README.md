@@ -39,3 +39,36 @@ is_offensive('Tittesworth'); // false
 is_offensive('cunt');        // true
 is_offensive('Scunthorpe');  // false
 ```
+
+If you prefer to avoid using helper functions, the following syntax is also available.
+
+```php
+$offensive = (new OffensiveChecker())->isOffensive('fuck')  // true
+```
+
+### Custom word lists
+
+There are reasons why you may wish to define your own list of offensive words. Perhaps the
+ones supplied are too strict, or not strict enough.
+
+```php
+$blacklist = ['moist', 'stinky', 'poo'];
+
+$offensiveChecker = new OffensiveChecker($blacklist);
+
+$offensiveChecker->isOffensive('poo');     // true
+$offensiveChecker->isOffensive('poops');   // true
+```
+
+You can also define a whitelist of words that will be accepted even if they match the defined
+list of offensive words.
+
+```php
+$blacklist = ['moist', 'stinky', 'poo'];
+$whitelist = ['poop'];
+
+$offensiveChecker = new OffensiveChecker($blacklist, $whitelist);
+
+$offensiveChecker->isOffensive('poo');     // true
+$offensiveChecker->isOffensive('poops');   // false
+```
