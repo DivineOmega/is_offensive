@@ -1,7 +1,7 @@
 <?php
 
-use PHPUnit\Framework\TestCase;
 use DivineOmega\IsOffensive\OffensiveChecker;
+use PHPUnit\Framework\TestCase;
 
 class CustomListsTest extends TestCase
 {
