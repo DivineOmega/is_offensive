@@ -1,33 +1,67 @@
 <?php
 
+namespace DivineOmega\IsOffensive\Tests;
+
 use PHPUnit\Framework\TestCase;
 
 class IsOffensiveTest extends TestCase
 {
-    public function testIfOffensive()
+    public function ifOffensiveProvider()
     {
-        $words = ['fuck', 'fuk', 'fuker', 'motherfucker', 'mutherfuker', 'cunt', 'tit'];
-
-        foreach ($words as $word) {
-            $this->assertTrue(is_offensive($word));
-        }
+        return [
+            ['fuck'],
+            ['fuk'],
+            ['fuker'],
+            ['motherfucker'],
+            ['mutherfuker'],
+            ['cunt'],
+            ['tit'],
+        ];
     }
 
-    public function testIfNotOffensive()
+    /**
+     * @dataProvider ifOffensiveProvider
+     */
+    public function testIfOffensive($word)
     {
-        $words = ['duck', 'cat', 'greetings', 'cheese'];
-
-        foreach ($words as $word) {
-            $this->assertFalse(is_offensive($word));
-        }
+        $this->assertTrue(is_offensive($word));
     }
 
-    public function testWhitelistedWords()
+    public function ifNotOffensiveProvider()
     {
-        $words = ['hello', 'Hello', 'HELLO', 'middlesex', 'tittesworth', 'scunthorpe'];
+        return [
+            ['duck'],
+            ['cat'],
+            ['greetings'],
+            ['cheese'],
+        ];
+    }
 
-        foreach ($words as $word) {
-            $this->assertFalse(is_offensive($word));
-        }
+    /**
+     * @dataProvider ifNotOffensiveProvider
+     */
+    public function testIfNotOffensive($word)
+    {
+        $this->assertFalse(is_offensive($word));
+    }
+
+    public function whitelistedWordsProvider()
+    {
+        return [
+            ['hello'],
+            ['Hello'],
+            ['HELLO'],
+            ['middlesex'],
+            ['tittesworth'],
+            ['scunthorpe'],
+        ];
+    }
+
+    /**
+     * @dataProvider whitelistedWordsProvider
+     */
+    public function testWhitelistedWords($word)
+    {
+        $this->assertFalse(is_offensive($word));
     }
 }

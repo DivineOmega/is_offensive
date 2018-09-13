@@ -1,5 +1,7 @@
 <?php
 
+namespace DivineOmega\IsOffensive\Tests;
+
 use DivineOmega\IsOffensive\OffensiveChecker;
 use PHPUnit\Framework\TestCase;
 
