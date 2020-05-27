@@ -1,16 +1,16 @@
 language: php
 dist: trusty
 php:
-  - '7.0'
   - '7.1'
   - '7.2'
+  - '7.3'
+  - '7.4'
   - nightly
-  - 'hhvm'
 matrix:
   allow_failures:
     - php: nightly
 install:
-  - composer update
+  - composer install
 script:
  - ./vendor/bin/phpunit --coverage-clover ./tests/Logs/clover.xml
 after_script:

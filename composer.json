@@ -9,8 +9,8 @@
         }
     ],
     "require-dev": {
-        "phpunit/phpunit": "^6.5",
-        "satooshi/php-coveralls": "^2.0"
+        "phpunit/phpunit": "^7.0 || ^8.0",
+        "php-coveralls/php-coveralls": "^2.0"
     },
     "autoload": {
         "psr-4": {
@@ -22,12 +22,12 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "DivineOmega\\IsOffensive\\Tests\\": "tests/"
+            "DivineOmega\\IsOffensive\\Tests\\": "tests/Unit/"
         }
     },
     "license": "LGPL-3.0-only",
     "require": {
-        "php": ">=7.0",
+        "php": ">=7.1",
         "snipe/banbuilder": "^2.2.5"
     }
 }
