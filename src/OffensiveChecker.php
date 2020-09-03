@@ -19,7 +19,7 @@ class OffensiveChecker
     private function setupBadWords(array $blacklist)
     {
         if ($blacklist) {
-            file_put_contents('/tmp/CustomBadWords.json', json_encode($blacklist));
+            file_put_contents(sys_get_temp_dir() . 'CustomBadWords.json', json_encode($blacklist));
             $this->censor->setDictionary([__DIR__.'/CustomBadWordsLoader.php']);
         } else {
             $this->censor->setDictionary([__DIR__.'/BadWordsLoader.php']);
