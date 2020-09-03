@@ -1,16 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="268c5cb5-a17f-4885-8c57-c76e1ca0d01e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/CustomBadWordsLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomBadWordsLoader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OffensiveChecker.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/OffensiveChecker.php" afterDir="false" />
+    <list default="true" id="268c5cb5-a17f-4885-8c57-c76e1ca0d01e" name="Default Changelist" comment="Fixed the Problem with Windows MAchines, the temp dir is now received by sys_get_temp_dir()">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -26,6 +44,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -36,11 +55,46 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599140886458</updated>
-      <workItem from="1599140887525" duration="51000" />
+      <workItem from="1599140887525" duration="883000" />
+      <workItem from="1599142590218" duration="235000" />
     </task>
+    <task id="LOCAL-00001" summary="Fixed the Problem with Windows MAchines, the temp dir is now received by sys_get_temp_dir()">
+      <created>1599141033520</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1599141033520</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fixed the Problem with Windows MAchines, the temp dir is now received by sys_get_temp_dir()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed the Problem with Windows MAchines, the temp dir is now received by sys_get_temp_dir()" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="87" key="DiffContextDialog" timestamp="1599142694104">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="184" y="87" key="DiffContextDialog/0.0.1920.1050/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1050" timestamp="1599142694104" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1599142699187">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1050" timestamp="1599142699187" />
   </component>
 </project>
