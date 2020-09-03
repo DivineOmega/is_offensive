@@ -19,10 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="268c5cb5-a17f-4885-8c57-c76e1ca0d01e" name="Default Changelist" comment="Fixed the Problem with Windows MAchines, the temp dir is now received by sys_get_temp_dir()">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="268c5cb5-a17f-4885-8c57-c76e1ca0d01e" name="Default Changelist" comment="Fixed the Problem with Windows MAchines, the temp dir is now received by sys_get_temp_dir()" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,6 +42,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -56,7 +54,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599140886458</updated>
       <workItem from="1599140887525" duration="883000" />
-      <workItem from="1599142590218" duration="235000" />
+      <workItem from="1599142590218" duration="594000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed the Problem with Windows MAchines, the temp dir is now received by sys_get_temp_dir()">
       <created>1599141033520</created>
@@ -92,6 +90,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="184" y="87" key="DiffContextDialog/0.0.1920.1050/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1050" timestamp="1599142694104" />
+    <state x="461" y="170" key="SettingsEditor" timestamp="1599143183431">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="461" y="170" key="SettingsEditor/0.0.1920.1050/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1050" timestamp="1599143183431" />
     <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1599142699187">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
